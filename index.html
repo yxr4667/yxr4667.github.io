@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>back00001234 🎀 貝殼ど⁰̷̴͈꒨⁰̷̴͈う♡</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Zen Maru Gothic & M PLUS Rounded 1c -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800;900&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Zen Maru Gothic"', '"M PLUS Rounded 1c"', 'sans-serif'],
+          },
+          colors: {
+            pinkie: {
+              50: '#fff1f5',
+              100: '#ffe4ec',
+              200: '#fecddc',
+              300: '#fea3be',
+              400: '#fc6b94',
+              500: '#f43f73',
+              600: '#e11d57',
+            },
+            sakura: '#FFB7C5',
+            peach: '#FFE5EC',
+            lavender: '#E8DFF5',
+          },
+          animation: {
+            'float-slow': 'floatSlow 7s ease-in-out infinite alternate',
+            'float-reverse': 'floatReverse 8s ease-in-out infinite alternate',
+            'soft-pulse': 'softPulse 4s ease-in-out infinite alternate',
+            'twinkle': 'twinkle 2.5s ease-in-out infinite',
+          },
+          keyframes: {
+            floatSlow: {
+              '0%': { transform: 'translateY(0px) rotate(0deg)' },
+              '100%': { transform: 'translateY(-14px) rotate(2deg)' },
+            },
+            floatReverse: {
+              '0%': { transform: 'translateY(0px) rotate(0deg)' },
+              '100%': { transform: 'translateY(16px) rotate(-2deg)' },
+            },
+            softPulse: {
+              '0%': { transform: 'scale(0.96)', opacity: '0.45' },
+              '100%': { transform: 'scale(1.08)', opacity: '0.8' },
+            },
+            twinkle: {
+              '0%, 100%': { opacity: '0.4', transform: 'scale(0.85)' },
+              '50%': { opacity: '1', transform: 'scale(1.2)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Ultra-Cute Pink Glassmorphism Cards */
+    .pink-glass {
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 2px solid rgba(255, 255, 255, 0.95);
+      border-radius: 32px;
+      box-shadow: 0 16px 40px -10px rgba(244, 63, 115, 0.12), 0 0 0 1px rgba(254, 205, 220, 0.45);
+      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .pink-glass:hover {
+      transform: translateY(-8px) scale(1.018);
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 24px 50px -10px rgba(244, 63, 115, 0.22), 0 0 0 2px rgba(254, 163, 190, 0.55);
+    }
+
+    /* Polka Dot and Star Texture Background */
+    .bg-cute-dots {
+      background-image: radial-gradient(rgba(244, 63, 115, 0.13) 1.5px, transparent 1.5px);
+      background-size: 26px 26px;
+    }
+
+    /* Custom Pink Scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #ffe4ec;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #fea3be;
+      border-radius: 999px;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-[#fff0f5] via-[#ffe5ec] to-[#fce4ec] text-slate-700 font-sans selection:bg-pink-300 selection:text-pink-900 flex flex-col justify-between overflow-x-hidden relative">
+
+  <!-- Floating Ambient Pastel Blobs -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-24 -left-20 w-[500px] h-[500px] bg-gradient-to-br from-pink-300/40 via-rose-200/35 to-pink-100/30 rounded-full blur-[100px] animate-float-slow"></div>
+    <div class="absolute top-1/3 -right-24 w-[520px] h-[520px] bg-gradient-to-bl from-purple-200/45 via-pink-200/40 to-peach/50 rounded-full blur-[110px] animate-float-reverse"></div>
+    <div class="absolute -bottom-28 left-1/3 w-[550px] h-[550px] bg-gradient-to-tr from-rose-200/40 via-amber-100/35 to-pink-200/40 rounded-full blur-[110px] animate-soft-pulse"></div>
+    <div class="absolute inset-0 bg-cute-dots pointer-events-none opacity-70"></div>
+  </div>
+
+  <!-- Toast Notification (複製提示彈窗) -->
+  <div id="toast" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/95 text-pink-600 border border-pink-200 shadow-xl shadow-pink-500/15 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 font-bold text-xs sm:text-sm">
+    <span class="text-base">🎀</span>
+    <span id="toastText">已複製好連結囉！</span>
+  </div>
+
+  <!-- Main Container -->
+  <div class="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 flex-grow flex flex-col justify-center">
+
+    <!-- Header Section -->
+    <header class="text-center mb-10 sm:mb-12">
+      
+      <!-- Avatar with Ribbon & Strawberry Badge -->
+      <div class="relative inline-block mb-4 group">
+        <div class="absolute -inset-2.5 rounded-full bg-gradient-to-r from-pink-400 via-rose-300 to-purple-300 blur-md opacity-60 group-hover:opacity-90 animate-soft-pulse"></div>
+        <div class="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-4 border-white bg-gradient-to-b from-pink-100 to-pink-200 shadow-xl flex items-center justify-center p-1">
+          <div class="w-full h-full rounded-full bg-white/70 backdrop-blur-sm flex flex-col items-center justify-center text-pink-500 font-black">
+            <span class="text-3xl sm:text-4xl">🎀</span>
+            <span class="text-[11px] tracking-wider text-pink-400 font-bold -mt-0.5">YN</span>
+          </div>
+        </div>
+        <!-- Strawberry Badge -->
+        <span class="absolute bottom-1 right-0 text-xl transform group-hover:scale-125 transition-transform duration-300">
+          🍓
+        </span>
+      </div>
+
+      <!-- Prominent Title -->
+      <div class="flex items-center justify-center gap-2 mb-2.5 flex-wrap px-2">
+        <h1 class="text-2xl sm:text-4xl font-black tracking-tight text-slate-800 flex items-center gap-1.5">
+          <span class="bg-gradient-to-r from-pink-500 via-rose-400 to-purple-500 bg-clip-text text-transparent">
+            貝殼ど⁰̷̴͈꒨⁰̷̴͈う♡
+          </span>
+        </h1>
+        <span class="text-xl sm:text-2xl animate-twinkle">✨</span>
+      </div>
+      
+      <!-- Welcome Subtitle -->
+      <p class="text-sm sm:text-base text-pink-900/85 max-w-lg mx-auto font-bold leading-relaxed px-3">
+        歡迎各位殼貝 可以加群組一起玩 或 追蹤我看更多笨蛋♡
+      </p>
+
+      <!-- Badges / Pills -->
+      <div class="flex items-center justify-center gap-2.5 mt-5 text-xs font-bold flex-wrap">
+        <span class="px-3.5 py-1.5 rounded-full bg-white/80 border border-pink-200 text-pink-600 flex items-center gap-1.5 shadow-sm hover:scale-105 transition-transform">
+          <span>🌸</span> 笨蛋日常
+        </span>
+        <span class="px-3.5 py-1.5 rounded-full bg-white/80 border border-purple-200 text-purple-600 flex items-center gap-1.5 shadow-sm hover:scale-105 transition-transform">
+          <span>🎯</span> 特戰英豪
+        </span>
+        <span class="px-3.5 py-1.5 rounded-full bg-white/80 border border-rose-200 text-rose-500 flex items-center gap-1.5 shadow-sm hover:scale-105 transition-transform">
+          <span>🍰</span> back00001234
+        </span>
+      </div>
+    </header>
+
+    <!-- Cards Bento Grid (純淨雙卡排版) -->
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto w-full">
+
+      <!-- CARD 1: INSTAGRAM -->
+      <article class="pink-glass p-6 sm:p-7 flex flex-col justify-between group overflow-hidden relative">
+        <div class="absolute -right-10 -bottom-10 w-44 h-44 bg-pink-300/30 rounded-full blur-2xl pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+
+        <div>
+          <!-- Tag & Copy Action (順序：呼吸燈 -> emoji -> 文字) -->
+          <div class="flex items-center justify-between mb-5">
+            <span class="px-3.5 py-1 rounded-full text-xs font-bold bg-pink-100/90 text-pink-600 border border-pink-200 flex items-center gap-2 shadow-sm">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
+              </span>
+              <span>💖</span>
+              <span>我的日常哀居</span>
+            </span>
+            <button 
+              type="button"
+              onclick="copyToClipboard('https://www.instagram.com/_yyyy_nn?psln=MTQwaG43b251MzAxcQ%3D%3D&utm_source=qr', 'Instagram 連結')" 
+              title="複製連結" 
+              class="p-2 rounded-2xl bg-white/80 hover:bg-pink-100 text-pink-400 hover:text-pink-600 transition shadow-sm active:scale-90"
+            >
+              <i data-lucide="copy" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <!-- Icon & Title (已改為 貝殼ど⁰̷̴͈꒨⁰̷̴͈う♡ 與 @_yyyy_nn) -->
+          <div class="flex items-center gap-3.5 mb-4">
+            <div class="w-14 h-14 rounded-2xl overflow-hidden shadow-lg shadow-pink-400/30 group-hover:rotate-6 transition-transform border-2 border-pink-200 bg-gradient-to-tr from-pink-400 via-rose-400 to-amber-300 flex items-center justify-center flex-shrink-0">
+              <div class="text-white flex items-center justify-center">
+                <i data-lucide="camera" class="w-7 h-7"></i>
+              </div>
+            </div>
+            <div class="overflow-hidden">
+              <h2 class="text-lg sm:text-xl font-black text-slate-800 group-hover:text-pink-600 transition-colors truncate">
+                貝殼ど⁰̷̴͈꒨⁰̷̴͈う♡
+              </h2>
+              <p class="text-xs text-pink-500 font-mono font-bold tracking-wide">@_yyyy_nn</p>
+            </div>
+          </div>
+
+          <!-- Instagram Bio -->
+          <div class="text-sm text-slate-700 leading-relaxed mb-6 font-medium bg-white/50 rounded-2xl p-4 border border-pink-100/80 shadow-inner">
+            <p class="font-bold text-slate-800 mb-1">愛一個人就應該只愛一個人</p>
+            <p class="italic text-pink-600 font-serif tracking-wide text-xs sm:text-sm">𝒞𝒽𝑒𝓇𝒾𝓈𝒽 𝓉𝒽𝑒 𝓅𝓇𝑒𝓈𝑒𝓃𝓉 𝓂𝑜𝓂𝑒𝓃𝓉</p>
+          </div>
+        </div>
+
+        <!-- Launch Button -->
+        <a 
+          href="https://www.instagram.com/_yyyy_nn?psln=MTQwaG43b251MzAxcQ%3D%3D&utm_source=qr" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="w-full py-3.5 px-4 rounded-2xl bg-gradient-to-r from-pink-500 via-rose-400 to-pink-400 hover:from-pink-600 hover:to-rose-500 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-pink-400/30 active:scale-95 transition-all"
+        >
+          <span>🍓 點我進哀居逛逛</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"></i>
+        </a>
+      </article>
+
+      <!-- CARD 2: DISCORD 遊戲群組 -->
+      <article class="pink-glass p-6 sm:p-7 flex flex-col justify-between group overflow-hidden relative">
+        <div class="absolute -right-10 -bottom-10 w-44 h-44 bg-purple-300/30 rounded-full blur-2xl pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+
+        <div>
+          <!-- Tag & Copy Action (順序：呼吸燈 -> emoji -> 文字，藍紫調搭配好看的電光粉藍呼吸燈) -->
+          <div class="flex items-center justify-between mb-5">
+            <span class="px-3.5 py-1 rounded-full text-xs font-bold bg-indigo-50/90 text-indigo-600 border border-indigo-200/80 flex items-center gap-2 shadow-sm">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500 shadow-[0_0_8px_#38bdf8]"></span>
+              </span>
+              <span>😈</span>
+              <span>在線亂打</span>
+            </span>
+            <button 
+              type="button"
+              onclick="copyToClipboard('https://discord.gg/uvfjk4fJEy', 'Discord 邀請連結')" 
+              title="複製連結" 
+              class="p-2 rounded-2xl bg-white/80 hover:bg-purple-100 text-purple-400 hover:text-purple-600 transition shadow-sm active:scale-90"
+            >
+              <i data-lucide="copy" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <!-- Icon & Server Name: 𝒄𝒐𝒎𝒆 𝑩𝑨𝑪𝑲 𝒕𝒐 𝒎𝒆 ♡ -->
+          <div class="flex items-center gap-3.5 mb-4">
+            <div class="w-14 h-14 rounded-2xl overflow-hidden shadow-lg shadow-purple-400/30 group-hover:rotate-6 transition-transform border-2 border-purple-200 bg-gradient-to-tr from-[#6872f7] to-[#b388ff] flex items-center justify-center flex-shrink-0">
+              <div class="text-white flex items-center justify-center">
+                <i data-lucide="gamepad-2" class="w-7 h-7"></i>
+              </div>
+            </div>
+            <div class="overflow-hidden">
+              <h2 class="text-lg sm:text-xl font-black text-slate-800 group-hover:text-purple-600 transition-colors truncate">
+                𝒄𝒐𝒎𝒆 𝑩𝑨𝑪𝑲 𝒕𝒐 𝒎𝒆 ♡
+              </h2>
+              <p class="text-xs text-purple-400 font-mono font-bold tracking-wide">discord.gg/uvfjk4fJEy</p>
+            </div>
+          </div>
+
+          <!-- Discord Bio -->
+          <div class="text-sm text-slate-700 leading-relaxed mb-6 font-medium bg-white/50 rounded-2xl p-4 border border-purple-100/80 shadow-inner flex items-center min-h-[74px]">
+            <p class="font-bold text-slate-800">
+              玩得開心就好ㄛ 殼貝們 🎮✨
+            </p>
+          </div>
+        </div>
+
+        <!-- Launch Button -->
+        <a 
+          href="https://discord.gg/uvfjk4fJEy" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="w-full py-3.5 px-4 rounded-2xl bg-gradient-to-r from-[#6366f1] via-[#8b5cf6] to-[#ec4899] hover:brightness-105 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-purple-400/30 active:scale-95 transition-all"
+        >
+          <span>👾 加入語音房開玩</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"></i>
+        </a>
+      </article>
+
+    </main>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="relative z-10 py-6 text-center text-xs text-pink-400/90 font-mono">
+    &copy; back00001234 &bull; 貝殼ど⁰̷̴͈꒨⁰̷̴͈う♡ &bull; Made with 💖
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Clipboard copy helper
+    window.copyToClipboard = function(text, label = '連結') {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(`已複製 ${label}！`);
+        }).catch(() => {
+          fallbackCopy(text, label);
+        });
+      } else {
+        fallbackCopy(text, label);
+      }
+    };
+
+    function fallbackCopy(text, label) {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.style.position = "fixed";
+      textArea.style.left = "-999999px";
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        showToast(`已複製 ${label}！`);
+      } catch (err) {
+        showToast(`複製失敗，請手動複製！`);
+      }
+      document.body.removeChild(textArea);
+    }
+
+    let toastTimer = null;
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastText = document.getElementById('toastText');
+      toastText.textContent = msg;
+
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2500);
+    }
+  </script>
+</body>
+</html>
