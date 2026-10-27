@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>back00001234 🎀 貝殼ど⁰̷̴͈꒨⁰̷̴͈う♡</title>
   
-  <!-- Tailwind CSS -->
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Google Fonts: Inter / Plus Jakarta Sans, Noto Sans TC, and Alex Brush -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Noto+Sans+TC:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <script>
     tailwind.config = {
@@ -19,7 +19,6 @@
         extend: {
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', '"Noto Sans TC"', 'sans-serif'],
-            cursive: ['"Alex Brush"', 'cursive']
           }
         }
       }
@@ -27,7 +26,7 @@
   </script>
 
   <style>
-    /* 原汁原味的甜美草莓粉嫩背景與可愛波點 */
+    /* 甜美粉嫩漸層底色與可愛波點 */
     body {
       background: radial-gradient(circle at 15% 15%, #ffd1dc 0%, transparent 40%),
                   radial-gradient(circle at 85% 20%, #e2d9f3 0%, transparent 35%),
@@ -76,10 +75,9 @@
       100% { transform: rotate(360deg); }
     }
 
-    /* 各卡片專屬的常駐滿光底色與流動光束 */
     /* 1. IG：粉紅常駐滿光 + 濃郁草莓霓虹流光 */
     .card-ig-stream {
-      box-shadow: 0 10px 30px -5px rgba(255, 45, 122, 0.32), 0 0 15px rgba(255, 45, 122, 0.2);
+      box-shadow: 0 10px 28px -6px rgba(255, 45, 122, 0.3), 0 0 14px rgba(255, 45, 122, 0.18);
     }
     .card-ig-stream::before {
       background: conic-gradient(
@@ -94,9 +92,27 @@
       );
     }
 
-    /* 2. DC：電競藍常駐滿光 + 冰藍霓虹流光 */
+    /* 2. TikTok：融洽白底 + 經典青藍 / 桃紅 雙色賽博流光 */
+    .card-tiktok-stream {
+      box-shadow: 0 10px 28px -6px rgba(254, 44, 85, 0.25), 0 0 16px rgba(0, 242, 234, 0.25);
+    }
+    .card-tiktok-stream::before {
+      background: conic-gradient(
+        from 0deg,
+        #00f2fe 0deg,
+        #fe2c55 60deg,
+        #ffffff 100deg,
+        #0f172a 140deg,
+        #fe2c55 220deg,
+        #00f2fe 280deg,
+        #ffffff 320deg,
+        #00f2fe 360deg
+      );
+    }
+
+    /* 3. DC：電競藍常駐滿光 + 冰藍霓虹流光 */
     .card-dc-stream {
-      box-shadow: 0 10px 30px -5px rgba(88, 101, 242, 0.32), 0 0 15px rgba(88, 101, 242, 0.2);
+      box-shadow: 0 10px 28px -6px rgba(88, 101, 242, 0.3), 0 0 14px rgba(88, 101, 242, 0.18);
     }
     .card-dc-stream::before {
       background: conic-gradient(
@@ -111,9 +127,9 @@
       );
     }
 
-    /* 3. Twitch：實況紫常駐滿光 + 魅紫霓虹流光 */
+    /* 4. Twitch：實況紫常駐滿光 + 魅紫霓虹流光 */
     .card-twitch-stream {
-      box-shadow: 0 10px 30px -5px rgba(145, 70, 255, 0.32), 0 0 15px rgba(145, 70, 255, 0.2);
+      box-shadow: 0 10px 28px -6px rgba(145, 70, 255, 0.3), 0 0 14px rgba(145, 70, 255, 0.18);
     }
     .card-twitch-stream::before {
       background: conic-gradient(
@@ -128,14 +144,14 @@
       );
     }
 
-    /* 卡片內部：純淨溫柔白底，隔絕光暈保持內容極致清晰 */
+    /* 統一四張卡片的純白內表面 */
     .card-inner-surface {
       position: relative;
       z-index: 1;
       width: 100%;
       height: 100%;
-      background: #ffffff;
       border-radius: 25px;
+      background: #ffffff;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -148,62 +164,62 @@
   <div class="fixed inset-0 cute-dot-bg pointer-events-none"></div>
 
   <!-- 主內容容器 -->
-  <div class="w-full max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-14 relative z-10 flex-grow flex flex-col justify-center">
+  <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 relative z-10 flex-grow flex flex-col justify-center">
 
     <!-- 頂部頭貼與標題區 -->
-    <header class="text-center mb-10 sm:mb-12 flex flex-col items-center">
-      <div class="relative group mb-4">
+    <header class="text-center mb-8 sm:mb-10 flex flex-col items-center">
+      <div class="relative group mb-3">
         <!-- 旋轉粉紫微光波紋 -->
         <div class="absolute -inset-2 bg-gradient-to-r from-pink-300 via-rose-300 to-purple-300 rounded-full blur-md opacity-75 group-hover:opacity-100 transition duration-500 animate-pulse"></div>
         
         <!-- 頭貼外框（精緻緞帶純 SVG 與 YN） -->
-        <div class="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-white shadow-lg overflow-hidden border-2 border-pink-200 flex items-center justify-center">
+        <div class="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full p-1 bg-white shadow-lg overflow-hidden border-2 border-pink-200 flex items-center justify-center">
           <div class="w-full h-full rounded-full bg-pink-50 flex flex-col items-center justify-center">
-            <svg class="w-12 h-12 text-pink-400 drop-shadow-sm group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor">
+            <svg class="w-10 h-10 sm:w-11 sm:h-11 text-pink-400 drop-shadow-sm group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 10.2c-1.3-1.6-3.8-3.2-6.5-2.2C2.7 8.9 2 11.8 3.5 13.8c1.3 1.7 3.9 2.1 6.5 1.1l-2.4 5.1c-.2.4 0 .9.4 1.1.4.2.9 0 1.1-.4l2.9-6.3 2.9 6.3c.2.4.7.6 1.1.4.4-.2.6-.7.4-1.1l-2.4-5.1c2.6 1 5.2.6 6.5-1.1 1.5-2 .8-4.9-2-5.8-2.7-1-5.2.6-6.5 2.2zm-4.7 2.4c-1.5 0-2.4-.9-2.6-1.8-.2-1.1.5-2.1 1.7-2.4 1.7-.4 3.4.9 4.6 2.3-1.2 1.3-2.6 1.9-3.7 1.9zm9.4 0c-1.1 0-2.5-.6-3.7-1.9 1.2-1.4 2.9-2.7 4.6-2.3 1.2.3 1.9 1.3 1.7 2.4-.2.9-1.1 1.8-2.6 1.8z"/>
             </svg>
-            <span class="text-[11px] font-bold tracking-widest text-pink-400 uppercase mt-0.5 font-mono">YN</span>
+            <span class="text-[10px] font-bold tracking-widest text-pink-400 uppercase mt-0.5 font-mono">YN</span>
           </div>
         </div>
         <!-- 可愛小草莓吊飾 -->
-        <span class="absolute bottom-1 right-1 text-2xl filter drop-shadow hover:scale-125 transition-transform cursor-pointer">🍓</span>
+        <span class="absolute bottom-0 right-0 text-xl sm:text-2xl filter drop-shadow hover:scale-125 transition-transform cursor-pointer">🍓</span>
       </div>
 
       <!-- 主暱稱 -->
-      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-pink-500 via-rose-400 to-purple-500 bg-clip-text text-transparent flex items-center justify-center gap-2">
+      <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-pink-500 via-rose-400 to-purple-500 bg-clip-text text-transparent flex items-center justify-center gap-2">
         貝殼ど⁰̷̴͈꒨⁰̷̴͈う♡
-        <span class="text-2xl animate-bounce">✨</span>
+        <span class="text-xl sm:text-2xl animate-bounce">✨</span>
       </h1>
 
       <!-- 歡迎詞 -->
-      <p class="mt-2.5 text-sm sm:text-base font-medium text-pink-600/90 tracking-wide max-w-lg px-4">
+      <p class="mt-2 text-xs sm:text-sm font-medium text-pink-600/90 tracking-wide max-w-lg px-4">
         歡迎各位殼貝 可以加群組一起玩 或 追蹤我看更多笨蛋♡
       </p>
 
       <!-- 標籤區 -->
-      <div class="flex flex-wrap justify-center gap-2.5 mt-4 text-xs font-semibold">
-        <span class="px-3.5 py-1.5 rounded-full bg-white/90 border border-pink-200 text-pink-600 shadow-sm flex items-center gap-1.5">
+      <div class="flex flex-wrap justify-center gap-2 mt-3.5 text-xs font-semibold">
+        <span class="px-3 py-1 rounded-full bg-white/90 border border-pink-200 text-pink-600 shadow-sm flex items-center gap-1.5">
           🌸 笨蛋日常
         </span>
-        <span class="px-3.5 py-1.5 rounded-full bg-white/90 border border-pink-200 text-indigo-600 shadow-sm flex items-center gap-1.5">
+        <span class="px-3 py-1 rounded-full bg-white/90 border border-pink-200 text-indigo-600 shadow-sm flex items-center gap-1.5">
           🎯 特戰英豪
         </span>
-        <span class="px-3.5 py-1.5 rounded-full bg-white/90 border border-pink-200 text-pink-700 shadow-sm flex items-center gap-1.5 font-mono">
+        <span class="px-3 py-1 rounded-full bg-white/90 border border-pink-200 text-pink-700 shadow-sm flex items-center gap-1.5 font-mono">
           🍰 back00001234
         </span>
       </div>
     </header>
 
-    <!-- 三卡並排區塊 (純色扁平內裝 + 外圍滿光流線邊框) -->
-    <main class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+    <!-- 四卡並排區塊：依序為 1. 哀居  2. 抖音  3. 低溪  4. 圖奇 -->
+    <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 w-full">
 
       <!-- ================= 1. INSTAGRAM 卡片 ================= -->
       <div class="stream-glow-card card-ig-stream">
-        <div class="card-inner-surface p-6">
+        <div class="card-inner-surface p-5">
           <div>
-            <!-- 上方標籤：粉紅呼吸燈 + 符號 + 文字 + 複製按鈕 -->
+            <!-- 狀態膠囊：粉紅呼吸燈 + 💖 + 我的日常哀居 -->
             <div class="flex items-center justify-between mb-4">
-              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold text-pink-600 bg-pink-50 border border-pink-200 shadow-sm">
+              <span class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full text-[11px] font-bold text-pink-600 bg-pink-50 border border-pink-200 shadow-sm">
                 <span class="relative flex h-2 w-2">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
@@ -213,7 +229,7 @@
 
               <button 
                 onclick="copyLink('https://www.instagram.com/_yyyy_nn?psln=MTQwaG43b251MzAxcQ%3D%3D&utm_source=qr', 'IG 連結已複製 ♡')" 
-                class="text-pink-400 hover:text-pink-600 p-1.5 rounded-full hover:bg-pink-50 transition active:scale-90" 
+                class="text-pink-400 hover:text-pink-600 p-1 rounded-full hover:bg-pink-50 transition active:scale-90" 
                 title="複製連結"
               >
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -223,51 +239,106 @@
             </div>
 
             <!-- 圖示與暱稱 -->
-            <div class="flex items-center gap-3.5 mb-4">
-              <div class="w-13 h-13 p-3 rounded-2xl bg-[#fb7185] shadow-md flex-shrink-0 flex items-center justify-center">
-                <svg class="w-7 h-7 fill-white" viewBox="0 0 24 24">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 p-2.5 rounded-2xl bg-[#fb7185] shadow-md flex-shrink-0 flex items-center justify-center">
+                <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                 </svg>
               </div>
               <div class="overflow-hidden">
-                <h3 class="text-base font-bold text-slate-800 truncate">貝殼ど⁰̷̴͈꒨⁰̷̴͈う♡</h3>
-                <span class="text-xs font-semibold text-rose-500 font-mono">@_yyyy_nn</span>
+                <h3 class="text-sm sm:text-base font-bold text-slate-800 truncate">貝殼ど⁰̷̴͈꒨⁰̷̴͈う♡</h3>
+                <span class="text-xs font-semibold text-rose-500 font-mono">_yyyy_nn</span>
               </div>
             </div>
 
-            <!-- 純色簡介小框框：兩行皆為相同的浪漫玫瑰粉色 #fb7185 -->
-            <div class="bg-[#fff1f2] rounded-2xl p-4 mb-5 border border-pink-200/80 min-h-[82px] flex flex-col justify-center">
-              <p class="text-xs sm:text-sm font-medium text-[#fb7185] tracking-wide mb-0.5">
+            <!-- 純色簡介小框框 -->
+            <div class="bg-[#fff1f2] rounded-2xl p-3.5 mb-4 border border-pink-200/80 min-h-[78px] flex flex-col justify-center">
+              <p class="text-xs font-medium text-[#fb7185] tracking-wide mb-0.5">
                 愛一個人就應該只愛一個人
               </p>
-              <p class="text-sm sm:text-base font-normal text-[#fb7185] tracking-wider leading-relaxed">
+              <p class="text-xs sm:text-sm font-normal text-[#fb7185] tracking-wider leading-relaxed">
                 𝒞𝒽𝑒𝓇𝒾𝓈𝒽 𝓉𝒽𝑒 𝓅𝓇𝑒𝓈𝑒𝓃𝓉 𝓂𝑜𝓂𝑒𝓃𝓉
               </p>
             </div>
           </div>
 
-          <!-- 純色草莓粉按鈕 -->
+          <!-- 淺一度甜美草莓粉按鈕 (#ff75a0) -->
           <a 
             href="https://www.instagram.com/_yyyy_nn?psln=MTQwaG43b251MzAxcQ%3D%3D&utm_source=qr" 
             target="_blank" 
             rel="noopener noreferrer" 
-            class="w-full py-3 px-4 rounded-2xl bg-[#fb7185] hover:bg-[#f43f5e] text-white font-bold text-xs tracking-wider shadow-md hover:shadow-lg transition flex items-center justify-center gap-2 active:scale-95"
+            class="w-full py-2.5 px-3 rounded-2xl bg-[#ff75a0] hover:bg-[#ff5d8f] text-white font-bold text-xs tracking-wider shadow-sm hover:shadow-md transition flex items-center justify-center gap-1.5 active:scale-95"
           >
-            <span>🍓 點我進哀居逛逛</span>
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-            </svg>
+            <span>💖 前往 Instagram 追蹤 ↗</span>
           </a>
         </div>
       </div>
 
-      <!-- ================= 2. DISCORD 卡片 ================= -->
-      <div class="stream-glow-card card-dc-stream">
-        <div class="card-inner-surface p-6">
+      <!-- ================= 2. TIKTOK 卡片 (第 2 位) ================= -->
+      <div class="stream-glow-card card-tiktok-stream">
+        <div class="card-inner-surface p-5">
           <div>
-            <!-- 上方標籤：電光藍呼吸燈 + 😈 + 在線亂打 + 複製按鈕 -->
+            <!-- 狀態膠囊：青粉雙色呼吸燈 + 🎵 + 抖音短影音 -->
             <div class="flex items-center justify-between mb-4">
-              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold text-indigo-600 bg-indigo-50 border border-indigo-200 shadow-sm">
+              <span class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full text-[11px] font-bold text-slate-800 bg-slate-100 border border-slate-200 shadow-sm">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#fe2c55] opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-[#00f2fe] shadow-[0_0_8px_#00f2fe]"></span>
+                </span>
+                <span>🎵 抖音短影音</span>
+              </span>
+
+              <button 
+                onclick="copyLink('https://www.tiktok.com/@back00001234?is_from_webapp=1&sender_device=pc', 'TikTok 連結已複製 ♡')" 
+                class="text-slate-400 hover:text-slate-700 p-1 rounded-full hover:bg-slate-100 transition active:scale-90" 
+                title="複製連結"
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                </svg>
+              </button>
+            </div>
+
+            <!-- 圖示與暱稱 -->
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 p-2.5 rounded-2xl bg-[#111217] shadow-md flex-shrink-0 flex items-center justify-center">
+                <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
+                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                </svg>
+              </div>
+              <div class="overflow-hidden">
+                <h3 class="text-sm sm:text-base font-bold text-slate-800 truncate">貝殼ど⁰̷̴͈꒨⁰̷̴͈う♡</h3>
+                <span class="text-xs font-semibold text-slate-500 font-mono">@back00001234</span>
+              </div>
+            </div>
+
+            <!-- 純色簡介小框框 -->
+            <div class="bg-[#f8fafc] rounded-2xl p-3.5 mb-4 border border-slate-200/80 min-h-[78px] flex items-center justify-center">
+              <p class="text-xs sm:text-sm font-medium text-[#111217] tracking-wide text-center">
+                追蹤我 帶你吃好多瓜
+              </p>
+            </div>
+          </div>
+
+          <!-- 淺一度石墨霧黑按鈕 (#2d333b) 不厚重不突兀 -->
+          <a 
+            href="https://www.tiktok.com/@back00001234?is_from_webapp=1&sender_device=pc" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="w-full py-2.5 px-3 rounded-2xl bg-[#2d333b] hover:bg-[#1f242c] text-white font-bold text-xs tracking-wider shadow-sm hover:shadow-md transition flex items-center justify-center gap-1.5 active:scale-95"
+          >
+            <span>🖤 前往 TikTok 追蹤 ↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ================= 3. DISCORD 卡片 (第 3 位) ================= -->
+      <div class="stream-glow-card card-dc-stream">
+        <div class="card-inner-surface p-5">
+          <div>
+            <!-- 狀態膠囊：電光藍呼吸燈 + 😈 + 在線亂打 -->
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full text-[11px] font-bold text-indigo-600 bg-indigo-50 border border-indigo-200 shadow-sm">
                 <span class="relative flex h-2 w-2">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500 shadow-[0_0_8px_#06b6d4]"></span>
@@ -277,7 +348,7 @@
 
               <button 
                 onclick="copyLink('https://discord.gg/uvfjk4fJEy', 'DC 邀請連結已複製 ♡')" 
-                class="text-indigo-400 hover:text-indigo-600 p-1.5 rounded-full hover:bg-indigo-50 transition active:scale-90" 
+                class="text-indigo-400 hover:text-indigo-600 p-1 rounded-full hover:bg-indigo-50 transition active:scale-90" 
                 title="複製連結"
               >
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -287,48 +358,45 @@
             </div>
 
             <!-- 圖示與群組名稱 -->
-            <div class="flex items-center gap-3.5 mb-4">
-              <div class="w-13 h-13 p-3 rounded-2xl bg-[#5865F2] shadow-md flex-shrink-0 flex items-center justify-center">
-                <svg class="w-7 h-7 fill-white" viewBox="0 0 24 24">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 p-2.5 rounded-2xl bg-[#5865F2] shadow-md flex-shrink-0 flex items-center justify-center">
+                <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
                   <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
                 </svg>
               </div>
               <div class="overflow-hidden">
-                <h3 class="text-base font-bold text-slate-800 truncate">𝒄𝒐𝒎𝒆 𝑩𝑨𝑪𝑲 𝒕𝒐 𝒎𝒆 ♡</h3>
+                <h3 class="text-sm sm:text-base font-bold text-slate-800 truncate">𝒄𝒐𝒎𝒆 𝑩𝑨𝑪𝑲 𝒕𝒐 𝒎𝒆 ♡</h3>
                 <span class="text-xs font-semibold text-indigo-500 font-mono">discord.gg/uvfjk4fJEy</span>
               </div>
             </div>
 
-            <!-- 純色簡介小框框：僅保留單行文字 -->
-            <div class="bg-[#eef2ff] rounded-2xl p-4 mb-5 border border-indigo-100 min-h-[82px] flex items-center justify-center">
+            <!-- 純色簡介小框框 (無尾隨表情) -->
+            <div class="bg-[#eef2ff] rounded-2xl p-3.5 mb-4 border border-indigo-100 min-h-[78px] flex items-center justify-center">
               <p class="text-xs sm:text-sm font-medium text-[#6366f1] tracking-wide text-center">
-                玩得開心就好ㄛ 殼貝們 🎮✨
+                玩得開心就好ㄛ 殼貝們
               </p>
             </div>
           </div>
 
-          <!-- 純色電競藍按鈕 -->
+          <!-- 淺一度柔和長春花藍按鈕 (#7289da) -->
           <a 
             href="https://discord.gg/uvfjk4fJEy" 
             target="_blank" 
             rel="noopener noreferrer" 
-            class="w-full py-3 px-4 rounded-2xl bg-[#5865F2] hover:bg-[#4752c4] text-white font-bold text-xs tracking-wider shadow-md hover:shadow-lg transition flex items-center justify-center gap-2 active:scale-95"
+            class="w-full py-2.5 px-3 rounded-2xl bg-[#7289da] hover:bg-[#5f75c8] text-white font-bold text-xs tracking-wider shadow-sm hover:shadow-md transition flex items-center justify-center gap-1.5 active:scale-95"
           >
-            <span>👾 加入語音房開玩</span>
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-            </svg>
+            <span>💙 加入 Discord 伺服器 ↗</span>
           </a>
         </div>
       </div>
 
-      <!-- ================= 3. TWITCH 卡片 ================= -->
+      <!-- ================= 4. TWITCH 卡片 (第 4 位) ================= -->
       <div class="stream-glow-card card-twitch-stream">
-        <div class="card-inner-surface p-6">
+        <div class="card-inner-surface p-5">
           <div>
-            <!-- 上方標籤：亮紫呼吸燈 + 🎮 + 實況開台 + 複製按鈕 -->
+            <!-- 狀態膠囊：亮紫呼吸燈 + 🎮 + 實況開台 -->
             <div class="flex items-center justify-between mb-4">
-              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold text-purple-600 bg-purple-50 border border-purple-200 shadow-sm">
+              <span class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full text-[11px] font-bold text-purple-600 bg-purple-50 border border-purple-200 shadow-sm">
                 <span class="relative flex h-2 w-2">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#9146FF] opacity-75"></span>
                   <span class="relative inline-flex rounded-full h-2 w-2 bg-[#9146FF] shadow-[0_0_8px_#9146FF]"></span>
@@ -338,7 +406,7 @@
 
               <button 
                 onclick="copyLink('https://www.twitch.tv/back00001234', 'Twitch 連結已複製 ♡')" 
-                class="text-purple-400 hover:text-purple-600 p-1.5 rounded-full hover:bg-purple-50 transition active:scale-90" 
+                class="text-purple-400 hover:text-purple-600 p-1 rounded-full hover:bg-purple-50 transition active:scale-90" 
                 title="複製連結"
               >
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -348,37 +416,34 @@
             </div>
 
             <!-- 圖示與實況名稱 -->
-            <div class="flex items-center gap-3.5 mb-4">
-              <div class="w-13 h-13 p-3 rounded-2xl bg-[#9146FF] shadow-md flex-shrink-0 flex items-center justify-center">
-                <svg class="w-7 h-7 fill-white" viewBox="0 0 24 24">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 p-2.5 rounded-2xl bg-[#9146FF] shadow-md flex-shrink-0 flex items-center justify-center">
+                <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
                   <path d="M2.149 0L.537 4.119v16.836h5.731V24h3.224l3.045-3.045h4.657l6.269-6.269V0H2.149zm19.164 13.612l-3.582 3.582H12l-3.045 3.045v-3.045H4.119V2.149h17.194v11.463zm-3.582-7.343v6.269h-2.149V6.269h2.149zm-5.731 0v6.269H9.851V6.269h2.149z"/>
                 </svg>
               </div>
               <div class="overflow-hidden">
-                <h3 class="text-base font-bold text-slate-800 truncate">貝殼1234</h3>
+                <h3 class="text-sm sm:text-base font-bold text-slate-800 truncate">貝殼1234</h3>
                 <span class="text-xs font-semibold text-purple-600 font-mono">twitch.tv/back00001234</span>
               </div>
             </div>
 
-            <!-- 純色簡介小框框：僅保留「先幫主播追蹤一下圖奇」 -->
-            <div class="bg-[#f5f3ff] rounded-2xl p-4 mb-5 border border-purple-100 min-h-[82px] flex items-center justify-center">
+            <!-- 純色簡介小框框 -->
+            <div class="bg-[#f5f3ff] rounded-2xl p-3.5 mb-4 border border-purple-100 min-h-[78px] flex items-center justify-center">
               <p class="text-xs sm:text-sm font-medium text-[#9146FF] tracking-wide text-center">
                 先幫主播追蹤一下圖奇
               </p>
             </div>
           </div>
 
-          <!-- 純色實況紫按鈕 -->
+          <!-- 淺一度甜美紫羅蘭按鈕 (#a87ffb) -->
           <a 
             href="https://www.twitch.tv/back00001234" 
             target="_blank" 
             rel="noopener noreferrer" 
-            class="w-full py-3 px-4 rounded-2xl bg-[#9146FF] hover:bg-[#7d2ae8] text-white font-bold text-xs tracking-wider shadow-md hover:shadow-lg transition flex items-center justify-center gap-2 active:scale-95"
+            class="w-full py-2.5 px-3 rounded-2xl bg-[#a87ffb] hover:bg-[#9363fa] text-white font-bold text-xs tracking-wider shadow-sm hover:shadow-md transition flex items-center justify-center gap-1.5 active:scale-95"
           >
-            <span>💜 前往 Twitch 看台</span>
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-            </svg>
+            <span>💜 前往 Twitch 看台 ↗</span>
           </a>
         </div>
       </div>
@@ -386,13 +451,13 @@
     </main>
   </div>
 
-  <!-- 底部微小版權聲明 -->
+  <!-- 底部版權聲明 -->
   <footer class="relative z-10 py-6 text-center text-xs font-medium text-pink-400/80">
     &copy; back00001234 &bull; 貝殼ど⁰̷̴͈꒨⁰̷̴͈う♡ &bull; 殼貝專屬傳送門
   </footer>
 
-  <!-- 複製提示吐司 -->
-  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-900/90 text-white px-5 py-2.5 rounded-full text-xs font-semibold shadow-xl backdrop-blur-md opacity-0 pointer-events-none transition duration-300 transform translate-y-3 z-50"></div>
+  <!-- 複製提示吐司 (Toast) -->
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-900/95 text-white px-5 py-2.5 rounded-full text-xs font-semibold shadow-2xl backdrop-blur-md opacity-0 pointer-events-none transition duration-300 transform translate-y-3 z-50 border border-white/10"></div>
 
   <script>
     function copyLink(url, message) {
